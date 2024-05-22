@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int horas_trabajadas;
+    float tarifa, salario;
+    cout << "Ingrese las horas trabajadas: ";
+    cin >> horas_trabajadas;
+    cout << "Ingrese la tarifa por hora: ";
+    cin >> tarifa;
+    if (horas_trabajadas <= 40) {
+        salario = horas_trabajadas * tarifa;
+    } else {
+        int horas_extras = horas_trabajadas - 40;
+        salario = (40 * tarifa) + (horas_extras * tarifa * 1.5);
+    }
+    cout << "El salario es: " << salario << endl;
+    return 0;
+}

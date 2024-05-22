@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float costo;
+    cout << "Ingrese el costo del artículo: ";
+    cin >> costo;
+    if (costo < 1500) {
+        cout << "Debes pagar en efectivo" << endl;
+    } else {
+        cout << "Debes pagar con tarjeta" << endl;
+    }
+    return 0;
+}
